@@ -1,14 +1,14 @@
-import {useState} from 'react'
+import { useState } from 'react'
 
 export const CounterApp = () => {
 
   const [state, setCounter] = useState({
-    counter1: 10, 
-    counter2: 20, 
+    counter1: 10,
+    counter2: 20,
     counter3: 30
   });
 
-  const {counter1, counter2, counter3} = state;
+  const { counter1, counter2, counter3 } = state;
 
   return (
     <>
@@ -16,11 +16,11 @@ export const CounterApp = () => {
       <h1>Counter1: {counter2}</h1>
       <h1>Counter1: {counter3}</h1>
 
-      <hr/>
+      <hr />
 
-      <button className = 'btn' onClick={ () => setCounter({
+      <button className='btn' onClick={() => setCounter({
         ...state,
-        counter1: counter1 +1, 
+        counter1: counter1 + 1,
       })}>+1</button>
     </>
   )
