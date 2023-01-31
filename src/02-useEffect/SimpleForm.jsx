@@ -45,7 +45,7 @@ export const SimpleForm = () => {
 <input
         type='email'
         className='form-control mt-2'
-        placeholder='juanma@uma.es'
+        placeholder='juanma.jota01@uma.es'
         name='email'
         value={email}
         onChange = {onImputChange}
